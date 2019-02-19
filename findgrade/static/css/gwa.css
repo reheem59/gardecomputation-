@@ -1,0 +1,36 @@
+.container {
+	margin: 150px auto;
+	height: 400px;
+	width: 700px;
+	border-radius: 5px;
+	background-color: white;
+	padding: 20px;
+}
+
+.input-group{
+	margin-top: 10%;
+}
+.input-group-text, .form-control{
+  border:1px solid #0C75B9;
+}
+
+.btn{
+	margin-top: 5%;
+	margin-left: 300px;
+}
+
+.header {
+	text-align: center;
+}
+
+.title {
+	font-size: 45px;
+	font-weight: bold;
+	
+}
+
+a:link, a:visited {
+	color: #0C75B9;
+	text-decoration: none;
+}
+

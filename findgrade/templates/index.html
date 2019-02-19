@@ -6,6 +6,13 @@
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="{% static 'css/home.css' %}">
+	<script type="text/javascript">function success() {
+	 if(document.getElementById("textsend").value==="") { 
+            document.getElementById('button').disabled = true; 
+        } else { 
+            document.getElementById('button').disabled = false;
+        }
+    }</script>
     </head>
     <body style="background-color: #0C75B9;">
 	
@@ -19,10 +26,10 @@
 	  <div class="input-group-prepend">
 		<span class="input-group-text" id="basic-addon1">ID</span>
 	  </div>
-	  <input type="text" class="form-control" placeholder="Student ID" name='StudNo' maxlength="9" aria-label="Username" aria-describedby="basic-addon1">
+	  <input type="text" class="form-control" onkeyup="success()" id ="textsend" placeholder="Student ID" name='StudNo' maxlength="9" aria-label="Username" aria-describedby="basic-addon1" onkeyup="stoppedTyping()" required>
 	</div>
     <div class="row">
-      <input class="btn btn-primary" onclick="window.open('/gwa','other_window')" type="submit" value="Submit">
+      <input class="btn btn-primary" id="button" onclick="window.open('/gwa','other_window'); verify()" type="submit" value="Submit"  disabled/>
 		</div>
 	</form>
 	<br>

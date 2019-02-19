@@ -5,24 +5,45 @@
 		<meta charset="utf-8">
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="{% static 'css/home.css' %}">
+		<link rel="stylesheet" href="{% static 'css/gwa.css' %}">
     </head>
     <body style="background-color: #0C75B9;">
 	
 	<div class="container">
 			<form name="ID-Form" class="contact2-form validate-form" action="" method="POST" >
 	<div class="header">
-	<p class = "title">gwa</p>
-	<a href="http://isims.iacademy.edu.ph">Please login to iSims first</a>
+	<div>
+		<div>
+	<p class = "title">Compute GWA</p>
 	</div>
-    <div class="input-group mb-3" data-validate="ID is required">
+
+    <div class="" data-validate="ID is required">
+    	</div>
 	  <div class="input-group-prepend">
-		<span class="input-group-text" id="basic-addon1">ID</span>
+	  	</div>
+	  	<div>
+		<span class="input-group-text" id="basic-addon1">Term/SY</span>
 	  </div>
-	  <input type="text" class="form-control" placeholder="Student ID" name='StudNo' maxlength="9" aria-label="Username" aria-describedby="basic-addon1">
+	  <input type="text" class="form-control" placeholder="Term/SY" name='Term/SY' maxlength="9" aria-label="Username" aria-describedby="basic-addon1">
+	  <div class="input-group-prepend">
+		<span class="input-group-text" id="basic-addon1">Subject</span>
+	  </div>
+	  <input type="text" class="form-control" placeholder="Subject" name='Subject' maxlength="9" aria-label="Username" aria-describedby="basic-addon1">
+	  <div class="input-group-prepend">
+		<span class="input-group-text" id="basic-addon1">Units</span>
+	  </div>
+	  <input type="text" class="form-control" placeholder="Units" name='Units' maxlength="9" aria-label="Username" aria-describedby="basic-addon1">
+	<div class="input-group-prepend">
+		<span class="input-group-text" id="basic-addon1">Grade</span>
+	  <input type="text" class="form-control" placeholder="Grade" name='Grade' maxlength="9" aria-label="Username" aria-describedby="basic-addon1">
 	</div>
+	</div>
+	
     <div class="row">
-      <input class="btn btn-primary" onclick="window.open('/gwa','other_window')" type="submit" value="Submit">
+      <input class="btn btn-primary" onclick="window.open('/gwa')" type="submit" value="add">
+		</div>
+	<div class="row">
+      <input class="btn btn-primary" onclick="window.open('/gwa')" type="submit" value="compute">
 		</div>
 	</form>
 	<br>

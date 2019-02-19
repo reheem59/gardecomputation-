@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 STATICFILES_DIRS = [
-    '/Users/Butt/findgrade/static',
+    '/Users/201401167.IACADEMYLOC/pyclass/Scripts/gardecomputation-/findgrade/static',
         ]
 
 
@@ -60,7 +60,7 @@ ROOT_URLCONF = 'findgrade.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/Users/Butt/findgrade/templates'],
+        'DIRS': ['/Users/201401167.IACADEMYLOC/pyclass/Scripts/gardecomputation-/findgrade/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
